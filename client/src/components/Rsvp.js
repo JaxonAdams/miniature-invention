@@ -33,7 +33,8 @@ const Rsvp = () => {
         }
 
         setFormState({ name: '', phone: '' });
-        document.querySelectorAll('.form-input').value = '';
+        document.querySelector('#form-name').value = '';
+        document.querySelector('#form-phone').value = '';
 
     };
 
