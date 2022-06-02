@@ -2,6 +2,7 @@
   --primary-font: 'Source Serif Pro', serif;
   --secondary-font: 'Indie Flower', cursive;
   --bg-primary: #3a3b3c;
+  --bg-secondary: #c2c499;
   --txt-primary: azure;
   --txt-secondary: goldenrod;
 }
@@ -21,19 +22,22 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--bg-secondary);
 }
 
 header nav ul {
+  width: 20vw;
   text-decoration: none;
   list-style: none;
   font-size: 1.5rem;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 header a {
   text-decoration: none;
-  color: azure;
+  color: var(--bg-primary);
 }
 
 .header-title {
@@ -59,14 +63,14 @@ header a {
 .section-title {
   text-align: center;
   width: 40vw;
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 1.5rem;
   font-weight: 300;
   font-size: 2.5rem;
   border-bottom: 5px solid goldenrod;
 }
 
-#countdown {
+#countdown, #rsvp {
   width: 90vw;
   margin: 2rem auto;
 }
@@ -87,7 +91,7 @@ header a {
   align-items: center;
 }
 
-.countdown-btn {
+.countdown-btn, .submit-btn {
   padding: .5rem 1.2rem;
   margin: .5rem 1rem;
   font-size: 1.3rem;
@@ -96,6 +100,79 @@ header a {
   border-radius: 3px;
   background-color: var(--bg-primary);
   color: var(--txt-primary);
+}
+
+#rsvp {
+  background-color: var(--bg-secondary);
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+#rsvp .section-title {
+  color: var(--bg-primary);
+}
+
+.form-container {
+  width: 60vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid goldenrod;
+  border-radius: 3px;
+  background-color: var(--bg-primary);
+}
+
+.form-title-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.7rem;
+  background-color: var(--bg-primary);
+}
+
+.form-title {
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 3;
+}
+
+.arrow {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-out;
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-out;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 15vh;
+  transition: all .3s ease-out;
+  z-index: 0;
+}
+
+.form-input {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+  padding: .3rem;
+}
+
+.hide {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s ease-out;
 }
 
 
@@ -146,10 +223,14 @@ header a {
     font-size: 2rem;
   }
 
-  .section-title {
+  .section-title, .form-container {
     width: 90vw;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+  }
+
+  .form-container, #rsvp .section-title {
+    margin: 0 auto 1rem auto;
   }
 }

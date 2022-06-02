@@ -9,6 +9,9 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
+                        <a href='#rsvp'>RSVP</a>
+                    </li>
+                    <li>
                         <a href='#countdown'>Countdown</a>
                     </li>
                 </ul>
