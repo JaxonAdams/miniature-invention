@@ -15,7 +15,7 @@ const Rsvp = () => {
         try {
             const response = await fetch('/api', {
                 method: 'POST',
-                body: formState,
+                body: JSON.stringify(formState),
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json'
