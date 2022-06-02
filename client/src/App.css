@@ -1,0 +1,15 @@
+:root {
+  --primary-font: 'Source Serif Pro', serif;
+  --secondary-font: 'Indie Flower', cursive;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+}
