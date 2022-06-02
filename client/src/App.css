@@ -139,6 +139,7 @@ header a {
   cursor: pointer;
   padding: 1rem;
   z-index: 3;
+  margin-bottom: 1.5rem;
 }
 
 .arrow {
@@ -158,9 +159,13 @@ header a {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
-  max-height: 15vh;
+  max-height: 25vh;
   transition: all .3s ease-out;
   z-index: 0;
+}
+
+.rsvp-info {
+  margin-bottom: 1.5rem;
 }
 
 .form-input {
