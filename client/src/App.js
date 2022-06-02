@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Header from './components/Header';
 import Countdown from './components/Countdown';
 import Rsvp from './components/Rsvp';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Rsvp />
       <Countdown />
+      <Gallery />
     </div>
   );
 }
