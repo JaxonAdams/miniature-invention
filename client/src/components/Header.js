@@ -14,6 +14,9 @@ const Header = () => {
                     <li>
                         <a href='#countdown'>Countdown</a>
                     </li>
+                    <li>
+                        <a href='#gallery'>Maternity Photos</a>
+                    </li>
                 </ul>
             </nav>
         </header>

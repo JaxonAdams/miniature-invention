@@ -26,7 +26,7 @@ header {
 }
 
 header nav ul {
-  width: 20vw;
+  width: 40vw;
   text-decoration: none;
   list-style: none;
   font-size: 1.5rem;
@@ -258,6 +258,17 @@ header a {
   background-size: cover;
 }
 
+footer {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.registry-link {
+  text-decoration: none;
+  color: azure;
+}
+
 
 
 /* media queries */
@@ -294,6 +305,10 @@ header a {
   header nav ul {
     justify-content: center;
     padding: 0;
+  }
+
+  header nav ul li {
+    margin-bottom: 1rem;
   }
 
   .hero {

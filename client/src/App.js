@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Countdown from './components/Countdown';
 import Rsvp from './components/Rsvp';
 import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Rsvp />
       <Countdown />
       <Gallery />
+      <Footer />
     </div>
   );
 }
