@@ -3,7 +3,16 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            <a href='/'><h2 className='header-title'>Home</h2></a>
+            <div className='title-container'>
+                <a href='/'><h2 className='header-title'>Home</h2></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href='#countdown'>Countdown</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
     );
 };

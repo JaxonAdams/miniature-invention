@@ -1,7 +1,9 @@
 :root {
   --primary-font: 'Source Serif Pro', serif;
   --secondary-font: 'Indie Flower', cursive;
-  --bg-primary: #2C3531;
+  --bg-primary: #3a3b3c;
+  --txt-primary: azure;
+  --txt-secondary: goldenrod;
 }
 
 html, body {
@@ -15,6 +17,18 @@ html, body {
 header {
   padding: .5rem 1rem;
   font-size: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 header a {
@@ -49,5 +63,93 @@ header a {
   padding: 1.5rem;
   font-weight: 300;
   font-size: 2.5rem;
-  border-bottom: 5px solid azure;
+  border-bottom: 5px solid goldenrod;
+}
+
+#countdown {
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.countdown-txt {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.text-secondary {
+  color: var(--txt-secondary);
+}
+
+.btn-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-btn {
+  padding: .5rem 1.2rem;
+  margin: .5rem 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: 3px solid goldenrod;
+  border-radius: 3px;
+  background-color: var(--bg-primary);
+  color: var(--txt-primary);
+}
+
+
+
+/* media queries */
+@media screen and (min-width: 1171px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .title-container {
+    width: 100vw;
+    text-align: center;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header nav {
+    text-align: center;
+  }
+
+  header nav ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    width: 90vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
 }
