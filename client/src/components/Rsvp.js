@@ -23,7 +23,7 @@ const Rsvp = () => {
             });
 
             if (!response.ok) {
-                throw new Error(`Error: ${response.message}`);
+                throw new Error(`Error: ${response.status}`);
             }
 
             const result = await response.json();
@@ -33,6 +33,7 @@ const Rsvp = () => {
         }
 
         setFormState({ name: '', phone: '' });
+        document.querySelectorAll('.form-input').value = '';
 
     };
 
@@ -55,6 +56,7 @@ const Rsvp = () => {
                     <input 
                         type='text' 
                         className='form-input'
+                        id='form-name'
                         name='name'
                         placeholder='Name...'
                         defaultValue={formState.name}
@@ -63,6 +65,7 @@ const Rsvp = () => {
                     <input 
                         type='tel' 
                         className='form-input'
+                        id='form-phone'
                         name='phone'
                         placeholder='Phone number...'
                         defaultValue={formState.phone}
