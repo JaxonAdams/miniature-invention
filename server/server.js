@@ -10,6 +10,10 @@ app.use(express.json());
 
 app.use(require('./routes/person-routes'));
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
 db.once('open', () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}.`);
